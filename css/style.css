@@ -3,3 +3,35 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1110px;
+    margin: auto;
+}
+.listItem{
+    padding-bottom: 10px;
+}
+p{
+    color: green;
+}
+#textId{
+    color: blue;
+}
+.textClass{
+    color: aqua;
+}
+.linkClassCombo{
+    text-decoration: none;
+    background-color: blueviolet;
+}
+.wrap p{
+    color: red;
+}
+.wrapAttachment>h1{
+    color: pink;
+}
+h1 + div{
+    color: black;
+}
+[data-target="some"]{
+    color: chocolate;
+}

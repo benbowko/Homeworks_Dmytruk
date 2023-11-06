@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+     <ul>
+        <li class="listItem"><p>Селектор елементу</p></li>
+        <li class="listItem"><p id="textId">Селектор по id</p></li>
+        <li class="listItem"><p class="textClass">Селектор по класу</p></li>
+        <li class="listItem"><a href="#" class="linkClassCombo textClass">За кількома класами</a></li>
+     </ul>
+     <div class="wrap">
+        <p> Селектор вкладенності</p>
+        <div>
+            <p> Селектор вкладенності</p>
+        </div>
+     </div>
+     <div class="wrapAttachment">
+        <h1>Перший рівень вкладенності</h1>
+      <div>
+        <h2> Сусідні елементи</h2>
+        <h2 data-target="some">По атрибуту із вказаним значенням</h2>
+      </div>
+     </div>
+    </div>
 </body>
 </html>
