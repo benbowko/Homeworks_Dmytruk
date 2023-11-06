@@ -3,12 +3,11 @@
     margin: 0;
     padding: 0;
 }
-h1{
-    text-align: center;
-}
+
 .container{
-    max-width: 1110px;
+    max-width: 700px;
     margin: auto;
+    text-align: center;
 }
 .imageCat{
     max-width: 70%;
@@ -31,8 +30,7 @@ h1{
 }
 .blocCard{
     display: inline-block;
-    max-width:200px;
-    margin: 30px 7px;
+    max-width: 200px;
+    margin: 10px;
     background-color: #E0E0E0;
-    text-align: center;
 }
