@@ -34,6 +34,7 @@ html{
     width: 200px;
     height: 200px;
     line-height: 200px;
+    display: inline-block;
 }
 .float_left{
     float: left;
@@ -42,22 +43,14 @@ html{
     float: right;
 }
 
-ul{  
-    text-align:right;
-}
 .small_square{
     font-size: 36px;
     width: 100px;
     height: 100px;
     line-height: 100px;
     background-color: #FC8F8F;
+    display: inline-block;
 }
-li{
-    text-align:center;   
-    list-style:none;  
-    display:inline-block;
-    color:#FFF;
-}
-li:nth-child(1){
+.square_right{
     margin-right: 16px;
 }
