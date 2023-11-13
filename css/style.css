@@ -9,6 +9,7 @@
     padding-right: 1rem;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 .main_header{
     text-align: center;
@@ -32,14 +33,23 @@ th{
 .bg-green{
     background-color: green;
 }
-/* .table_February{
+.table_February{
     float: right;
-} */
-.table_February::after{
+    display: inline-block;
+}
+.table_January{
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+}
+.table-block{
+    display: inline-block;
+    padding: 4px;
+}
+.table_block::after{
     content: '';
-    display: block;
     clear: both;
 }
-/* .table_January{
-    float: right;
-} */
+.border-block{
+    border: 1px solid;
+}
