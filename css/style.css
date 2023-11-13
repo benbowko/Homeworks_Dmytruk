@@ -3,3 +3,43 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: calc(1110px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.main_header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.second_header{
+    text-align: center;
+    margin: 0;
+}
+table,
+td,
+tr,
+th{
+    border: 1px solid;
+    padding: 0.25rem;
+    text-align: center;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-green{
+    background-color: green;
+}
+/* .table_February{
+    float: right;
+} */
+.table_February::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* .table_January{
+    float: right;
+} */
