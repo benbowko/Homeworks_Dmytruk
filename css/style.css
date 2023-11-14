@@ -9,12 +9,12 @@
     padding-right: 1rem;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
+    margin-top: 20px;
 }
 .main_header{
     margin-bottom: 20px;
 }
-table{
+.table_calendar{
     border: 1px solid;
     text-align: center;
     border-spacing: 10px;
@@ -24,20 +24,19 @@ table{
 .bg-yellow{
     background-color: yellow;
 }
-.bg-green{
-    background-color: green;
+.table_row{
+    border: 1px solid;
+    display: inline-block;
+}
+/* .table-row::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+.float_right{
+    float: right;
 }
 .float_left{
     float: left;
 }
-.float_right{
-    float: right;
-}
-.table-block{
-    display: inline-block;
-    border: 1px solid;
-    padding: 0.30rem;
-}
-.table_January{
-    margin-right: 10px;
-}
+
