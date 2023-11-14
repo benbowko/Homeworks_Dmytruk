@@ -12,44 +12,32 @@
     text-align: center;
 }
 .main_header{
-    text-align: center;
     margin-bottom: 20px;
 }
-.second_header{
-    text-align: center;
-    margin: 0;
-}
-table,
-td,
-tr,
-th{
+table{
     border: 1px solid;
-    padding: 0.25rem;
     text-align: center;
+    border-spacing: 10px;
+	border-collapse: separate;
 }
+
 .bg-yellow{
     background-color: yellow;
 }
 .bg-green{
     background-color: green;
 }
-.table_February{
-    float: right;
-    display: inline-block;
-}
-.table_January{
+.float_left{
     float: left;
-    display: inline-block;
-    margin-right: 20px;
+}
+.float_right{
+    float: right;
 }
 .table-block{
     display: inline-block;
-    padding: 4px;
-}
-.table_block::after{
-    content: '';
-    clear: both;
-}
-.border-block{
     border: 1px solid;
+    padding: 0.30rem;
+}
+.table_January{
+    margin-right: 10px;
 }
