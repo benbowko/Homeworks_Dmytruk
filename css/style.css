@@ -20,7 +20,7 @@ html{
     padding: 0;
 }
 .container{
-    max-width: calc(var(--container-width) + var(--basic-space * 2));
+    max-width: calc(var(--container-width) + var(--basic-space) * 2);
     padding-right: var(--basic-space);
     padding-left: var(--basic-space);
     margin-left: auto;
@@ -29,3 +29,36 @@ html{
 img{
     max-width: 100%;
 }
+/* -----------HEADER-------------------------------------------------------------------------------------------- */
+.header{
+    background-color: var(--secondary-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.logo{
+    font-size: 32px;
+    line-height: 1.25;
+    font-family: 'Courgette', sans-serif;
+}
+.logo .color{
+    color: aquamarine;
+}
+.header .nav-list{
+    display: inline-block;
+    margin-left: 80px;
+}
+.nav-link + .nav-link{
+    margin-left: 20px;
+}
+.first-section{
+    background-color: var(--primary-color);
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 170px;
+    text-align: center;
+}
+.main-title{
+    font-family: 'Limelight', sans-serif;
+    font-size: 48px;
+}
+
