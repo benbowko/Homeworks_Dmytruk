@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Limelight';
+    src: url('Limelight-Regular.woff2') format('woff2'),
+        url('Limelight-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('Courgette-Regular.woff2') format('woff2'),
+        url('Courgette-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Bold.woff2') format('woff2'),
+        url('Lato-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.woff2') format('woff2'),
+        url('Lato-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
