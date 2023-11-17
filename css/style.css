@@ -1,15 +1,105 @@
+:root{
+    --container-width: 1110px;
+    --basic-space: 1rem;
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --bg-light: #EEEFF1;
+    --text-color: #727272;
+
+
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26.25px;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .container{
-    max-width: calc(1110px + 2rem);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: calc(var(--container-width) + var(--basic-space) * 2);
+    padding-right: var(--basic-space);
+    padding-left: var(--basic-space);
     margin-left: auto;
     margin-right: auto;
 }
 img{
     max-width: 100%;
+}
+/* ---------------------------------------HEADER-------------------------------------------------------------------------------------------------------- */
+.header{
+    background-color: var(--bg-light);
+    padding-top: 79px;
+    padding-bottom: 151px;
+}
+.nav-list{
+    display: inline-block;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-right: 42px;
+
+}
+.nav-link:hover{
+    color: #34547A;
+    
+}
+/* -------------------------------------------------------------FIRST SECTION---------------------------------------------------------------------------- */
+.first-section{
+    background-color: var(--bg-light);
+    margin-bottom: 112px;
+}
+.design-wrapper{
+    background-color: var(--bg-light);
+    padding-bottom: 141px;
+}
+.main-header{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+.text{
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 65px;
+}
+.write-link{
+    text-decoration: none;
+    background-color: #34547A;
+    padding: 20px 41px 20px 41px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+/* ---------------------------------------------------SECOND SECTION------------------------------------------------------------------------------------- */
+.second-section{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.about-header{
+    margin-bottom: 50px;
+}
+.text-about{
+    margin: 0;
+    color: var(--text-color);
+    font-weight: 400;
+}
+/* ------------------------------------------------THIRD SECTION------------------------------------------------------------------------------------------ */
+.third-section{
+    margin-bottom: 100px;
+    background-color: #34547A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.img-block{
+    display: inline-block;
+}
+
+.float-right{
+    float: right;
 }
