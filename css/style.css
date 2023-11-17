@@ -60,5 +60,89 @@ img{
 .main-title{
     font-family: 'Limelight', sans-serif;
     font-size: 48px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 738px;
+    text-transform: uppercase;
 
+}
+.about-section{
+    background-color: var(--bg-light);
+    padding-top: ;
+}
+.section-title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.section-title{
+    color: var(--primary-color);
+}
+.medium-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.about-section .description{
+    font-size: 24px;
+    line-height: 29.7px;
+}
+.about-section .wrapper > *{
+    width: 50%;
+    display: inline-block;
+}
+.about-section .wrapper .text-wrap{
+    float: left;
+    background-color: #e5e5e5;
+    padding: 24px;
+    border-radius: 8px 0 0 8px;
+}
+/* ---------------- features----------------------------------------------- */
+.features-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.description{
+    color: var(--text-color);
+}
+.card{
+    display: inline-block;
+    max-width: 322px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 24px;
+}
+.card + .card{
+    margin-left: 68px;
+}
+.card .description{
+    margin-bottom: 24px;
+}
+.card .card-link{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.card-img{
+    display: block;
+    margin-bottom: 24px;
+}
+/* ------------footer------------------------------- */
+
+.footer{
+    background-color: var(--secondary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+.footer .copy {
+    margin-bottom: 24px;
+}
+.social-link + .social-link{
+    margin-left: var(--basic-space);
+}
+.social-link svg path{
+    transition: all 0.3s linear;
+}
+.social-link:hover svg path{
+    fill: var(--primary-color);
+}
