@@ -4,12 +4,38 @@
     padding: 0;
 }
 .container{
-    max-width: calc(1110px + 2rem);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
 img{
     max-width: 100%;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.53px;
+    color: #161616;
+}
+.text-center{
+    text-align: center;
+}
+.nav-block{
+    background-color: #81A36B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-family: 'Vetrino', sans-serif;
+    font-size: 36px;
+    line-height: 38.74px;
+    font-weight: 400;
+    margin-right: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nav-link{
+    padding-right: 90px;
 }
