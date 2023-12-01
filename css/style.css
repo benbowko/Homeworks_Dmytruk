@@ -44,7 +44,27 @@ html{
     padding-right: 90px;
     text-decoration: none;
     color: #161616;
+    position: relative;
+    transition: transform 0.1s ease-in-out;
 }
+.nav-link::before, .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: #d8d8d6;
+    transition: transform 0.5s;
+}
+.nav-link::after{
+    left: 0;
+    width: 25%;
+    height: 2px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+
 /* --------------------------------------------------main------------------------------------------------- */
 .amelia-block{
     background-color: #d8d8d6;
@@ -77,6 +97,7 @@ html{
 }
 
 .amelia-link{
+    display: inline-block;
     text-decoration: none;
     padding: 20px 30px 20px 30px;
     border: 2px solid #81A36B;
@@ -86,9 +107,29 @@ html{
     font-weight: 400;
     line-height: 21.09px;
     text-align: center;
+    position: relative;
+    transition: all 0.5s;
 }
+span{
+    position: relative;
+    z-index: 2;
+}
+.amelia-link:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #81A36B;
+    transition: all 0.35s;
+  }
+
 .amelia-link:hover{
-    background-color:#81A36B;
+    color: #161616;
+}
+.amelia-link:hover::after{
+    width: 100%;
 }
 .first-img{
     margin-right: 60px;
@@ -213,12 +254,32 @@ html{
 }
 .contacts-link{
     text-decoration: none;
+    text-transform: uppercase;
     color: #161616;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 29.53px;
     padding-bottom: 20px;
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+}
+.contacts-link::before, .contacts-link::after{
+    content: "";
+    position: absolute;
+    background-color: #d8d8d6;
+    transition: transform 0.5s;
+}
+.contacts-link::after{
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 15px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.contacts-link:hover::after{
+    transform: scaleX(1);
 }
 .amelia-contact{
     text-align: center;
@@ -236,10 +297,32 @@ html{
     text-align: center;
     margin-top: 40px;
 }
-.social-link{
-    margin-left: 20px;
+.social-link-insta{
+    margin-right: 20px;
     text-decoration: none;
 }
-.social-link:hover{
-    background-color: #fccc63;
+.social-link-insta svg path{
+    transition: all 0.5s linear;
+}
+.social-link-insta:hover svg path{
+    fill: #881f12;
+}
+.social-link-telegram{
+    margin-right: 20px;
+    text-decoration: none;
+}
+.social-link-telegram svg path{
+    transition: all 0.5s linear;
+}
+.social-link-telegram:hover svg path{
+    fill: #229ED9;
+}
+.social-viber{
+    text-decoration: none;
+}
+.social-link-viber svg path{
+    transition: all 0.5s linear;
+}
+.social-link-viber:hover svg path{
+    fill: #59267c;
 }
