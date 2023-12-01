@@ -236,3 +236,10 @@ html{
     text-align: center;
     margin-top: 40px;
 }
+.social-link{
+    margin-left: 20px;
+    text-decoration: none;
+}
+.social-link:hover{
+    background-color: #fccc63;
+}
