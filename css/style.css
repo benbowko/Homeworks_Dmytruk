@@ -17,7 +17,6 @@ html{
     font-weight: 400;
     line-height: 29.53px;
     color: #161616;
-    /* background-color: #d8d8d6; */
 }
 .text-center{
     text-align: center;
@@ -140,7 +139,6 @@ html{
 /* ------------------------------------------------------------how-we-work-section--------------------------------------------------------------------------------------------------------*/
 .work-img{
     max-width: 540px;
-    margin-bottom: 120px;
 }
 .work-block{
     margin-left: 30px;
@@ -167,6 +165,7 @@ html{
 .bg-grey{
   background-color: #d8d8d6;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .wrapper-jobs{
     display: flex;
@@ -193,4 +192,47 @@ html{
      max-width: 350px;
      background-color: #81A36B;
      margin-right: 30px;
+}
+/* ----------------------------------------------------------footer------------------------------------------------------------------------------------------------------------------ */
+.flex-contacts{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+.wrapper-contacts{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-header{
+    color: #161616;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39.38px;
+    margin-bottom: 40px;
+}
+.contacts-link{
+    text-decoration: none;
+    color: #161616;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.53px;
+    padding-bottom: 20px;
+}
+.amelia-contact{
+    text-align: center;
+    font-family: 'Vetrino', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 38.74px;
+    color: #161616;
+}
+.wrapper-social{
+    display: block;
+    text-align: center;
+}
+.text-year{
+    text-align: center;
+    margin-top: 40px;
 }
