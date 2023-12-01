@@ -17,10 +17,13 @@ html{
     font-weight: 400;
     line-height: 29.53px;
     color: #161616;
+    /* background-color: #d8d8d6; */
 }
 .text-center{
     text-align: center;
 }
+
+/* ----------------------------------------header---------------------------------------------- */
 .nav-block{
     background-color: #81A36B;
     display: flex;
@@ -35,7 +38,159 @@ html{
     margin-right: 130px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #161616;
+    
 }
 .nav-link{
     padding-right: 90px;
+    text-decoration: none;
+    color: #161616;
+}
+/* --------------------------------------------------main------------------------------------------------- */
+.amelia-block{
+    background-color: #d8d8d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-info{
+    max-width: 540px;
+    margin-right: 30px;
+}
+.amelia-header{
+    font-family: 'Vetrino', sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 66.71px;
+    color: #161616;
+}
+.amelia-text{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #161616;
+}
+.first-img{
+    max-width: 540px;
+}
+.make-order{
+    margin-right: 60px;
+}
+
+.amelia-link{
+    text-decoration: none;
+    padding: 20px 30px 20px 30px;
+    border: 2px solid #81A36B;
+    color: #161616;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: center;
+}
+.amelia-link:hover{
+    background-color:#81A36B;
+}
+.first-img{
+    margin-right: 60px;
+}
+/* --------------------------------------------------------------------about-section ----------------------------------------------------------------------------------------------*/
+.about{
+    background-color: #d8d8d6;
+}
+.block-about{
+    max-width: 540px;
+}
+.about-us{
+    font-family: 'Vetrino', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34.43px;
+    color: #161616;
+    padding-top: 120px;
+    margin-bottom: 60px;
+}
+.text-about{
+   padding-bottom: 120px;
+   color:#161616
+}
+/* -------------------------------------------------list-section ------------------------------------------------------------------------------------------------------------------------*/
+.list-bg{
+    background-color:#81A36B;
+}
+.flex-block{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.block-list{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 45px;
+    padding-left: 5px;
+}
+.text-list{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    color:#161616
+}
+/* ------------------------------------------------------------how-we-work-section--------------------------------------------------------------------------------------------------------*/
+.work-img{
+    max-width: 540px;
+    margin-bottom: 120px;
+}
+.work-block{
+    margin-left: 30px;
+    max-width: 540px;
+}
+.work-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-header{
+    font-family: 'Vetrino', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34.43px;
+    color: #161616;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.work-text{
+    color: #161616;
+    
+}
+.bg-grey{
+  background-color: #d8d8d6;
+  padding-top: 120px;
+}
+.wrapper-jobs{
+    display: flex;
+    justify-content: center;
+}
+.jobs-header{
+    text-align: center;
+    font-family: 'Vetrino', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34.43px;
+    color: #161616;
+    margin-bottom: 80px;
+}
+.jobs-image{
+    margin-bottom: 23px;
+    max-width: 320px;
+}
+.jobs-text{
+    text-align: center;
+}
+.jobs-list{
+    padding: 15px 15px 93px 15px;
+     max-width: 350px;
+     background-color: #81A36B;
+     margin-right: 30px;
 }
