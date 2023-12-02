@@ -38,14 +38,14 @@ html{
     margin-top: 20px;
     margin-bottom: 20px;
     color: #161616;
-    
 }
+
 .nav-link{
-    padding-right: 90px;
     text-decoration: none;
     color: #161616;
     position: relative;
     transition: transform 0.1s ease-in-out;
+    margin-right: 90px;
 }
 .nav-link::before, .nav-link::after{
     content: "";
@@ -273,7 +273,7 @@ span{
 }
 .contacts-link::after{
     left: 0;
-    width: 100%;
+    width: 20%;
     height: 2px;
     bottom: 15px;
     transform: scaleX(0);
