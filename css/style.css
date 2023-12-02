@@ -55,7 +55,7 @@ html{
 }
 .nav-link::after{
     left: 0;
-    width: 25%;
+    width: 100%;
     height: 2px;
     bottom: -5px;
     transform: scaleX(0);
@@ -273,7 +273,7 @@ span{
 }
 .contacts-link::after{
     left: 0;
-    width: 20%;
+    width: 50%;
     height: 2px;
     bottom: 15px;
     transform: scaleX(0);
