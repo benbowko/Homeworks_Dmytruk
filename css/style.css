@@ -1,3 +1,7 @@
+:root{
+   --primary-color: #F13C6E;
+   --bg-color: #efefef;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,8 +16,114 @@
 }
 html{
     font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    line-height: 75px;
-    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #333333;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.gap-30{
+    gap: 30px;
+}
+.gap-40{
+    gap: 40px;
+}
+.bg.gray{
+    background-color: var(--bg-color);
+}
+.bg-primary{
+    background-color: var(--primary-color);
+}
+a{
+    text-decoration: none;
+}
+.color-black{
+    color: black;
+}
+/* ------------------------------------------------------------------------------------- header-----------------------------------*/
+.header .up-part{
+    padding-top: 17px;
+    padding-bottom: 16px;
+}
+.btn{
+    display: inline-block;
+    min-width: 170px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn.default{
+    border-color: var(--primary-color);
+}
+.btn.white{
+    border-color: white;
     color: white;
+}
+.btn.red{
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn.small{
+    min-width: 130px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.header .center-part{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header .up-part{
+    padding-top: 17px;
+    padding-bottom: 16px;
+}
+.logo{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    color: var(--primary-color);
+    gap: 20px;
+}
+.tel{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    white-space: nowrap;
+}
+.header .down-part{
+    border-top: 2px solid var(--bg-color);
+    line-height: 19px;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* -----------------------------------main */
+.main-section{
+   background-image: url(../images/main-bg.jpg);
+    color: white;
+}
+.main-section .wrap{
+    max-width: 310px;
+    padding-top: 192px;
+    padding-bottom: 193px;
 }
