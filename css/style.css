@@ -1,6 +1,8 @@
 :root{
    --primary-color: #F13C6E;
    --bg-color: #efefef;
+   --card-columns: 4;
+   --card-gap: 30px;
 }
 * {
     box-sizing: border-box;
@@ -8,11 +10,17 @@
     padding: 0;
 }
 .container{
+    width: 100%;
     max-width: calc(1110px + 2rem);
     padding-right: 1rem;
     padding-left: 1rem;
     margin-left: auto;
     margin-right: auto;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 html{
     font-family: 'Roboto', sans-serif;
@@ -39,7 +47,7 @@ html{
 .gap-40{
     gap: 40px;
 }
-.bg.gray{
+.bg-gray{
     background-color: var(--bg-color);
 }
 .bg-primary{
@@ -47,9 +55,16 @@ html{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 .color-black{
     color: black;
+}
+.section-title{
+    font-size: 24px;
+    margin-bottom: 38px;
+    font-weight: 700;
+    line-height: 28px;
 }
 /* ------------------------------------------------------------------------------------- header-----------------------------------*/
 .header .up-part{
@@ -119,11 +134,112 @@ a{
 }
 /* -----------------------------------main */
 .main-section{
-   background-image: url(../images/main-bg.jpg);
+    background: var(--primary-color) url("../images/main-bg.jpg") no-repeat
+    center/cover;
     color: white;
-}
-.main-section .wrap{
-    max-width: 310px;
     padding-top: 192px;
     padding-bottom: 193px;
+
+}
+.main-section .wrap{
+    max-width: 340px;
+}
+.main-section .main-title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 50px;
+}
+.main-section .description{
+    margin-bottom: 50px;
+}
+/* -----------------------------PRODUCT------------------------------------------------ */
+.product-card{
+    background-color: white;
+    padding: 25px 30px;
+    text-align: center;
+    /* max-width: calc(25% - 90px / 4); */
+    /* 4 картки в ряд - 1.4=25% - відстань між ними поділена на їх к-сть */
+    max-width: calc(
+        (100% / var(--card-columns)) - 
+        ((var(--card-gap) * (var(--card-columns) - 1)) / var(--card-columns))
+    );
+    /* формула на картки для швидкого розташування  відсотки це колумнс, геп помножений на колумнс -1 це 90пксділених на 4*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-card .price{
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 21px;
+    color: black;
+    margin-bottom: 20px;
+}
+.product-card .prod-img{
+    display: block;
+    margin-bottom: 20px;
+    aspect-ratio: 195/166;
+    object-fit: contain;
+    /* аспект + обджект фіт підігнали будь-яке зображення(розмір) під одне співвідношення та пропорції */
+}
+.card-wrap{
+    flex-wrap: wrap;
+}
+.product-card .description{
+    flex: 1;
+    margin-bottom: 20px;
+ }
+/* ---------------------------------------------PROMO BLOCK ------------------------*/
+.promo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.promo-card{
+    width: 100%;
+    padding: 35px 45px 35px 40px;
+}
+.promo-card.card-1 .text{
+    max-width: 250px;
+    color: white;
+}
+.promo-card.card-2 .text{
+    max-width: 150px;
+    color: white;
+}
+.promo-card .promo-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+.promo-card .description{
+    margin-bottom: 25px;
+}
+.promo-card .input{
+    border: none;
+    background-color: white;
+    font: inherit;
+    color:black;
+    min-width: 225px;
+    border-radius: 30px;
+    padding: 9px 25px;
+}
+/* ------------------------------------------IMPULS------------------------- */
+.partners{
+    padding-top: 80px;
+}
+.partner-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 120px;
+    flex-grow: 1;
+    background-color: white;
+    min-width: 24%;
+}
+.partners .wrap{
+    flex-wrap: wrap;
+    gap: 1px;
 }
