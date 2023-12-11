@@ -221,7 +221,8 @@ a{
     color: white;
     text-align: center;
     font-size: 12px;
-    padding: 5px 10px 5px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .product-section .product-title{
     font-family: 'Bitter', sans-serif;
@@ -238,7 +239,7 @@ a{
     line-height: 35px;
     color: var(--text-color);
     margin-bottom: 13px;
-    text-align: center;
+    margin-left: 26px;
 }
 .product-section .product-block{
     max-width: 357px;
@@ -252,8 +253,6 @@ a{
 }
 .product-section .description-block{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .product-section .product-img{
