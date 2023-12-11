@@ -154,7 +154,7 @@ a{
 }
 .latest-section .description{
   margin-left: 15px;
-
+  max-width: 274px;
 }
  .block-articles{
     display: inline-block;
@@ -200,6 +200,9 @@ a{
     margin: 0;
 }
 /* ----------------------------------------------------------------product-section---------------------------------------------------------------------------------------- */
+.product-section{
+    margin-bottom: 100px;
+}
 .product-section .img-container{
     position: relative;
 }
@@ -251,4 +254,169 @@ a{
 }
 .product-section .product-img{
     margin-bottom: 24px;
+}
+/* -------------------------------------------------------------newsletter-section------------------------------------------------------------------------ */
+.news-section{
+    margin-bottom: 100px;
+}
+.news-section .wrapper-news{
+    background: #E3EBF1 url("../images/bg-image-2.jpg") no-repeat;
+}
+.news-section .news-image-block{
+    margin: 50px;
+}
+.news-section .news-image{
+    max-width: 500px;
+}
+.news-section .news-letter-block{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    max-width: 500px;
+}
+.news-section .news-title{
+    font-family: 'Bitter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 10px;
+    color: var(--text-color);
+}
+.news-section .news-text{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.news-section .input{
+   color: #536D7A;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 20px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 16px;
+   width: 500px;
+   border-radius: 5px;
+   border: 1px solid #AABCC5;
+}
+.news-section .form{
+    margin-bottom: 31px;
+}
+.news-section .submit{
+    padding: 15px 21px 15px 19px;
+    background-color: #FFC728;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.news-section .sub-text{
+    color: var(--text-color);
+}
+/* --------------------------------------------footer----------------------------------------------------------------------------------- */
+.footer{
+    background-color: #F7F9FA;
+    padding-top: 40px;
+    padding-bottom: 102px;
+}
+.footer .footer-logo{
+    margin-bottom: 10px;
+}
+.footer .links-block{
+    margin-bottom: 19px;
+}
+.footer .footer-text{
+    max-width: 306px;
+    font-size: 16px;
+    color:var(--text-color);
+}
+.footer .latest-header{
+    font-family: 'Bitter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+.footer .latest-text{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--text-color);
+    margin-left: 9px;
+    max-width: 191px;
+}
+.footer .browse-title{
+    font-family: 'Bitter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 12px;
+    color: #333333;
+}
+.footer .search{
+    width: 274px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid #AABCC5;
+    border-radius: 5px 0px 0px 5px;
+}
+.footer .browse-form{
+    position: relative;
+    margin-bottom: 19px;
+}
+.footer .bth{
+    background-color: #768F9C;
+    border: 1px solid #768F9C;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 14px 20px 13px 20px;
+    position: absolute;
+}
+.footer .browse-list{
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    padding-bottom: 28px;
+}
+.mb-7{
+    margin-bottom: 7px;
+}
+.footer .browse-link{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-self: self-start;
+}
+.footer .brand-text{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 127px;
+}
+.border{
+    border-bottom: 1px solid #536D7A;
+}
+.footer .footer-image{
+    margin-bottom: 20px;
+}
+.footer .info-block{
+    margin-top: 21px;
+}
+.footer .info-link{
+    font-size: 11px;
+    color: var(--text-color);
+}
+.mr-10{
+    margin-right: 10px;
 }
