@@ -1,12 +1,164 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Affilate</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container flex items-center">
+    <a href="#" class="logo">
+      <img src="./images/Affilate.png" alt="logo" class="logo-img">
+    </a>
+    <nav class="nav-list flex">
+      <a href="#" class="nav-link">
+      <span class="text-nav">Pages</span>
+    </a>
+    <a href="#" class="nav-link flex items-center">
+      <img src="./icons/categories.svg" alt="categories" class="mr-6">
+      <span class="text-nav">Categories</span>
+    </a>
+    <a href="#" class="nav-link flex items-center">
+      <img src="./icons/blog.svg" alt="blog" class="mr-6">
+      <span class="text-nav">Blog</span>
+    </a>
+    <a href="#" class="nav-link flex items-center">
+      <img src="./icons/review.svg" alt="review" class="mr-6">
+      <span class="text-nav">Reviews</span>
+    </a>
+    <a href="#" class="nav-link flex items-center">
+      <img src="./icons/guides.svg" alt="guides" class="mr-6">
+      <span class="text-nav">Buying Guides</span>
+    </a>
+  </nav>
+  <a href="#" class="sign-link flex items-center">
+    <img src="./icons/mail.svg" alt="mail" class="mail-image">
+    <span>Sign up</span>
+  </a>
+  </div>
+  </header>
+  <main class="main">
+    <section class="template-section">
+      <div class="container">
+        <div class="wrapper-template flex">
+        <img src="./images/template.png" alt="template" class="template-img">
+        <div class="text-block">
+        <p class="intro-text">Introducing Affiliate Template for Webflow</p>
+        <h1 class="template-title">Easy-to-use Template for building Affiliate Sites</h1>
+        <p class="template-text"><b>Affiliate</b> is a Webflow template made for entrepreneurs who want a professional and polished site ready to start and grow their affiliate marketing business in any niche.</p>
+        <a href="#" class="buy-link">Buy this Template</a>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="latest-section">
+      <div class="container">
+        <h2 class="latest-title">Latest from the Blog</h2>
+        <div class="wrapper-latest flex">
+        <div class="first-block width mr-40">
+          <img src="./images/image_1.png" alt="latest-image" class="spring-image">
+          <h2 class="spring-title">How to Prep Your Lawn in the Spring</h2>
+          <p class="spring-text">This is the blog description text. This is the blog description text. This is the blog description text.</p>
+        </div>
+        <div class="second-block width">
+          <div class="wrapper-variants flex items-center">
+          <img src="./images/image_2.png" alt="latest-image">
+          <p class="description">Secrets to Know About Hedge <br>Trimming</p>
+        </div>
+          <div class="wrapper-variants flex items-center">
+            <img src="./images/image_3.png" alt="latest-image">
+            <p class="description">What to Do With a Dying Tree</p>
+        </div>
+        <div class="wrapper-variants flex items-center">
+          <img src="./images/image_4.png" alt="latest-image">
+          <p class="description">Which Flowers Should You Plant <br>Garden</p>
+      </div>
+        </div>
+      </div>
+      <div class="block-articles">
+      <a href="#" class="articles-link flex items-center">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)"/>
+          <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_1_211" transform="translate(-0.002) scale(0.004)"/>
+          </pattern>
+          <image id="image0_1_211" width="251" height="250" xlink:href="data:image/png;base64,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"/>
+          </defs>
+          </svg>
+         <span class="articles-text">View All Blog Articles</span>
+      </a>
+    </div>
+      </div>
+    </section>
+    <section class="view-section">
+      <div class="container">
+        <div class="view-block flex items-center justify-between">
+        <div class="wrapper-view flex items-center">
+          <img src="./images/view-image.png" alt="view-image" class="view-img">
+          <p class="view-text">View our list of the best products in lawncare.</p>
+        </div>
+        <div class="wrapper-view-link">
+        <a href="#" class="see-link">See the list</a>
+      </div>
+    </div>
+      </div>
+    </section>
+    <section class="product-section">
+      <div class="container">
+        <h2 class="product-title">Latest Product Reviews</h2>
+        <div class="wrapper-product flex">
+          <div class="product-block mr-40">
+            <figure class="img-container">
+            <img src="./images/product-image-1.png" alt="product" class="product-img">
+            <figcaption class="image-caption">Lawns</figcaption>
+          </figure>
+          <div class="description-block">
+            <h2 class="description-title">Lawnmower Xtreme</h2>
+            <p class="product-text">This is the Review Snippet. This is the Review Snippet. This is the Review Snippet. This is the Review Snippet.</p>
+          </div>
+          </div>
+          <div class="product-block mr-40">
+            <figure class="img-container">
+            <img src="./images/product-image-2.png" alt="product" class="product-img">
+            <figcaption class="image-caption">Garden</figcaption>
+          </figure>
+          <div class="description-block">
+            <h2 class="description-title">Ultra Grow Fertilizer</h2>
+            <p class="product-text">This is the Review Snippet. This is the Review Snippet. This is the Review Snippet. This is the Review Snippet.</p>
+          </div>
+          </div>
+          <div class="product-block">
+            <figure class="img-container">
+            <img src="./images/product-image-3.png" alt="product" class="product-img">
+            <figcaption class="image-caption">Hedges</figcaption>
+          </figure>
+          <div class="description-block">
+            <h2 class="description-title">Hedge Clippers</h2>
+            <p class="product-text">This is the Review Snippet. This is the Review Snippet. This is the Review Snippet. This is the Review Snippet.</p>
+          </div>
+          </div>
+        </div>
+        <div class="block-articles">
+          <a href="#" class="articles-link flex items-center">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)"/>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_1_211" transform="translate(-0.002) scale(0.004)"/>
+              </pattern>
+              <image id="image0_1_211" width="251" height="250" xlink:href="data:image/png;base64,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"/>
+              </defs>
+              </svg>
+             <span class="articles-text">View all Product Reviews</span>
+          </a>
+        </div>
+      </div>
+    </section>
     
+  </main>
 </body>
 </html>
