@@ -159,7 +159,6 @@ input::placeholder{
     width: 0;
     height: 0;
     float: left;
-    margin-right: 10px;
 }
 .label-check .remember-me{
     display: inline-block;
