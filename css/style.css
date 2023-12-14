@@ -64,9 +64,11 @@ html{
     border-radius: 30px;
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 75px;
+    width: 340px;
 }
 .form{
     background: rgba(233, 233, 233, 0.25);
