@@ -101,11 +101,7 @@ input::placeholder{
 .label-main{
     margin-bottom: 20px;
 }
-.remember-me{
-    margin-right: 127px;
-    margin-left: 5px;
-    color: white;
-}
+
 .forgot-pass{
     color: #153416;
     font-family: 'Roboto', sans-serif;
@@ -163,17 +159,21 @@ input::placeholder{
     width: 0;
     height: 0;
     float: left;
+    margin-right: 10px;
 }
-.label-check .checkbox{
+.label-check .remember-me{
     display: inline-block;
     width: 15px;
     height: 15px;
     border: 1px solid;
     border-radius: 2px;
-    background-color: #153416;
+    margin-right: 127px;
+    margin-left: 5px;
+    color: white;
 }
-.label-check input[type="checkbox"]:checked + .checkbox{
+.label-check input[type="checkbox"]:checked + .remember-me{
     background: url("../icons/Vector.svg");
     background-size: cover;
     background-position: center;
+    background-color: #153416;
 }
