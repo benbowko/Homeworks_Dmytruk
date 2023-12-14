@@ -154,11 +154,19 @@ input::placeholder{
     padding-right: 20px;
     text-decoration: none;
 }
-   .checkbox{
+.label-check input[type="checkbox"]{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    float: left;
+}
+.label-check .checkboxx{
     display: inline-block;
     width: 15px;
     height: 15px;
     border: 1px solid;
     border-radius: 2px;
+}
+.label-check input[type="checkbox"]:checked + .checkboxx{
     background-color: #153416;
 }
