@@ -3,19 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>authorization</title>
 </head>
 <body>
     <main>
         <section class="main">
-            <div class="wrapper-form">
-                <form action="">
-                    <input type="text">
-                    <button type="submit">Send</button>
-                </form>
-            </div>
             <div class="container">
+                <div class="wrapper-form flex end">
+                    <form method="post" class="form flex column max-width text-center">
+                        <div class="wrapper-authorize">
+                            <a href="index.html" class="login">Вход</a>
+                            <a href="registration.html" class="login" target="_blank">Регистрация</a>
+                        </div>
+                    <label class="label-main flex column">
+                        <span class="log">Вход</span>
+                        <input type="email" name="email" placeholder="Введите E-mail" class="information mb-15">
+                        <input type="password" name="password" placeholder="Пароль" class="information">
+                    </label>
+                    <label class="label-check">
+                        <input type="checkbox" class="checkbox"><span class="remember-me">Запомнить меня</span>
+                        <a href="#" class="forgot-pass">Забыли пароль?</a>
+                    </label>
+                    <div class="wraper-button">
+                        <button class="submit">Войти</button>
+                    </div>
+                    <div class="box-registr">
+                        <span class="no-acc">Еще нет аккаунта? </span>
+                        <a href="registration.html" class="registr" target="_blank">Зарегистрироваться</a>
+                    </div>
+                    <div class="links-block">
+                        <p class="another-log">Или войдите через</p>
+                        <div class="wrapper-links">
+                        <a href="https://uk-ua.facebook.com" class="link" target="_blank"><svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1034 0C8.41159 0 6.78897 0.640807 5.59255 1.78143C4.39628 2.92207 3.72414 4.46909 3.72414 6.08219V9.46849H0.310345C0.138952 9.46849 0 9.60092 0 9.76438V14.2356C0 14.3991 0.138952 14.5315 0.310345 14.5315H3.72414V23.7041C3.72414 23.8676 3.86309 24 4.03448 24H8.72414C8.89559 24 9.03448 23.8676 9.03448 23.7041V14.5315H12.4785C12.621 14.5315 12.7451 14.4391 12.7796 14.3074L13.952 9.83619C14.001 9.64945 13.8528 9.46849 13.6509 9.46849H9.03448V6.08219C9.03448 5.81189 9.14717 5.55265 9.34759 5.36152C9.548 5.17039 9.82 5.06301 10.1034 5.06301H13.6897C13.8611 5.06301 14 4.93053 14 4.76712V0.29589C14 0.13248 13.8611 0 13.6897 0H10.1034Z" fill="#153416"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com" class="link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9997 7.7643C9.65654 7.7643 7.75696 9.6607 7.75696 12C7.75696 14.3392 9.65654 16.2356 11.9997 16.2356C14.3429 16.2356 16.2425 14.3392 16.2425 12C16.2425 9.6607 14.3429 7.7643 11.9997 7.7643Z" fill="#153416"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.17177 0.376693C9.67323 -0.125564 14.3268 -0.125564 18.8282 0.376693C21.3065 0.653209 23.3055 2.60263 23.5963 5.08543C24.1346 9.67952 24.1346 14.3205 23.5963 18.9145C23.3055 21.3974 21.3065 23.3469 18.8282 23.6233C14.3268 24.1256 9.67323 24.1256 5.17177 23.6233C2.69347 23.3469 0.694548 21.3974 0.403664 18.9145C-0.134555 14.3205 -0.134555 9.67952 0.403664 5.08543C0.694548 2.60263 2.69347 0.653209 5.17177 0.376693ZM18.5273 4.18035C17.8063 4.18035 17.2218 4.76385 17.2218 5.48362C17.2218 6.2034 17.8063 6.7869 18.5273 6.7869C19.2483 6.7869 19.8328 6.2034 19.8328 5.48362C19.8328 4.76385 19.2483 4.18035 18.5273 4.18035ZM5.799 12C5.799 8.58106 8.57527 5.80944 12 5.80944C15.4247 5.80944 18.2009 8.58106 18.2009 12C18.2009 15.419 15.4247 18.1906 12 18.1906C8.57527 18.1906 5.799 15.419 5.799 12Z" fill="#153416"/>
+                                </svg>
+                        </a>
+                        <a href="https://ua.linkedin.com" class="link-in" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.72 0C1.21778 0 0 1.18615 0 2.64935C0 4.11254 1.21778 5.2987 2.72 5.2987C4.22221 5.2987 5.44 4.11254 5.44 2.64935C5.44 1.18615 4.22221 0 2.72 0Z" fill="#153416"/>
+                                <path d="M0.16 7.48052C0.0716288 7.48052 0 7.55029 0 7.63636V23.8442C0 23.9302 0.0716288 24 0.16 24H5.28C5.36837 24 5.44 23.9302 5.44 23.8442V7.63636C5.44 7.55029 5.36837 7.48052 5.28 7.48052H0.16Z" fill="#153416"/>
+                                <path d="M8.48 7.48052C8.39163 7.48052 8.32 7.55029 8.32 7.63636V23.8442C8.32 23.9302 8.39163 24 8.48 24H13.6C13.6883 24 13.76 23.9302 13.76 23.8442V15.1169C13.76 14.4969 14.0128 13.9023 14.463 13.4639C14.913 13.0255 15.5235 12.7792 16.16 12.7792C16.7965 12.7792 17.407 13.0255 17.857 13.4639C18.3072 13.9023 18.56 14.4969 18.56 15.1169V23.8442C18.56 23.9302 18.6317 24 18.72 24H23.84C23.9283 24 24 23.9302 24 23.8442V13.0974C24 10.0719 21.2984 7.70492 18.2077 7.9786C17.2547 8.06299 16.3123 8.29379 15.4323 8.66112L13.76 9.3592V7.63636C13.76 7.55029 13.6883 7.48052 13.6 7.48052H8.48Z" fill="#153416"/>
+                                </svg>                            
+                        </a>
+                    </div>
+                    </div>
+                </form>
+                </div>
             </div>
         </section>
     </main>
