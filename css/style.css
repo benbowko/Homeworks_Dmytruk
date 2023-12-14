@@ -4,7 +4,6 @@
     padding: 0;
 }
 .container{
-    max-width: 1240px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,7 +100,34 @@ input::placeholder{
 .label-main{
     margin-bottom: 20px;
 }
-
+.label-check{
+    display: flex;
+    justify-content: center;
+}
+.label-check input[type="checkbox"]{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    float: left;
+}
+.label-check .remember-me{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 2px;
+    color: white;
+    margin-right: 10px;
+}
+.label-check input[type="checkbox"]:checked + .remember-me{
+    background: url("../icons/Vector.svg");
+    background-size: cover;
+    background-position: center;
+    background-color: #153416;
+}
+.remember-text{
+    margin-right: 117px;
+}
 .forgot-pass{
     color: #153416;
     font-family: 'Roboto', sans-serif;
@@ -153,26 +179,4 @@ input::placeholder{
 .link{
     padding-right: 20px;
     text-decoration: none;
-}
-.label-check input[type="checkbox"]{
-    opacity: 0;
-    width: 0;
-    height: 0;
-    float: left;
-}
-.label-check .remember-me{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 1px solid;
-    border-radius: 2px;
-    margin-right: 127px;
-    margin-left: 5px;
-    color: white;
-}
-.label-check input[type="checkbox"]:checked + .remember-me{
-    background: url("../icons/Vector.svg");
-    background-size: cover;
-    background-position: center;
-    background-color: #153416;
 }
