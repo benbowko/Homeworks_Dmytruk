@@ -11,9 +11,30 @@
     <main>
         <section class="main">
             <div class="container">
-                <div class="wrapper-authorize">
-                    <a href="index.html" class="login">Вход</a>
-                    <a href=""></a>
+                <div class="wrapper-form flex end">
+                    <form method="post" class="form flex column max-width text-center">
+                        <div class="wrapper-authorize">
+                            <a href="index.html" class="login">Вход</a>
+                            <a href="registration.html" class="login" target="_blank">Регистрация</a>
+                        </div>
+                    <label class="label-main flex column">
+                        <span class="log">Регистрация</span>
+                        <input type="email" name="email" placeholder="Введите E-mail" class="information mb-15">
+                        <input type="password" name="password" placeholder="Пароль" class="information mb-15">
+                        <input type="password" name="password" placeholder="Повторить пароль" class="information">
+                    </label>
+                    <label class="label-check">
+                        <input type="checkbox" class="checkbox"><span class="remember-me">Получать новости</span>
+                        <a href="#" class="forgot-pass">Забыли пароль?</a>
+                    </label>
+                    <div class="wraper-button">
+                        <button class="submit">Зарегестрироваться</button>
+                    </div>
+                    <div class="box-registr">
+                        <span class="no-acc">Уже есть аккаунт? </span>
+                        <a href="index.html" class="registr" target="_blank">Авторизироваться</a>
+                    </div>
+                </form>
                 </div>
             </div>
         </section>

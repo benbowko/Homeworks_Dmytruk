@@ -124,6 +124,10 @@ input::placeholder{
     background-color: #153416;
     border-radius: 30px;
     border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }
 .submit:hover{
     background: rgba(233, 233, 233, 0.25);
@@ -160,13 +164,16 @@ input::placeholder{
     height: 0;
     float: left;
 }
-.label-check .checkboxx{
+.label-check .checkbox{
     display: inline-block;
     width: 15px;
     height: 15px;
     border: 1px solid;
     border-radius: 2px;
-}
-.label-check input[type="checkbox"]:checked + .checkboxx{
     background-color: #153416;
+}
+.label-check input[type="checkbox"]:checked + .checkbox{
+    background: url("../icons/Vector.svg");
+    background-size: cover;
+    background-position: center;
 }
