@@ -15,10 +15,102 @@ img{
 }
 a{
     text-decoration: none;
+    color: white;
 }
-html{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+ul{
+    list-style: none;
+}
+.mr-10{
+    margin-right: 10px;
+}
+/* ------------------------------------menu */
+.menu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    width: 405px;
+    background-color: #333333;
+    border-bottom: 3px solid #009eff;
+}
+.menu-li{
+    display: inline-block;
+    position: relative;
+    transition:  0.3s linear;
+}
+.products-menu{
+    display: none;
+}
+.sub-menu{
+    display: none;
+}
+.menu-li:hover .products-menu{
+    display: block;
+    position: absolute;
+}
+.products-li:nth-child(1){
+    margin-top: 49px;
+    background-color: #009eff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    padding-left: 10px;
+    border: 1px solid #0084ef;
+}
+.products-li:nth-child(2){
+    background-color: #009eff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    padding-left: 10px;
+    border: 1px solid #0084ef;
+}
+.sub-li:nth-child(1){
+    margin-bottom: 5px;
+}
+
+.products-li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    right: -150px;
+    top: 104px;
+}
+
+.sub-li:nth-child(1){
+    background-color: #009eff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    padding-left: 10px;
+    border: 1px solid #0084ef;
+    margin: 0;
+}
+.sub-li:nth-child(2){
+    background-color: #009eff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    padding-left: 10px;
+    border: 1px solid #0084ef;
+}
+.menu-li:hover {
+    background-color: #009eff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #0084ef;
+}
+.products-li:hover {
+    background-color: #00a9ff;
+}
+.menu-li:hover::after {
+    content: '+';
+    color: #fff; 
+    margin-left: 3px;
+    font-weight: bold; 
+}
+.products-li:hover::after{
+    content: '+';
+    color: #fff; 
+    margin-left: 40px; 
+    font-weight: bold; 
+    display: inline-block;
 }
