@@ -26,6 +26,7 @@ ul{
 .mb-20{
     margin-bottom: 20px;
 }
+
 /* ------------------------------------menu */
 .menu{
     padding-top: 30px;
@@ -35,50 +36,32 @@ ul{
     border-bottom: 3px solid #009eff;
     position: relative;
 }
-.products-menu{
-    display: none;
-}
-.sub-menu{
-    display: none;
-}
-.menu-li{
+.parent{
     display: inline-block;
 }
-.menu-link:hover{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #009eff;
+.child{
+    display: none;
 }
-.menu-link::after {
-    content: '+';
-    color: #fff; 
-    margin-left: 3px;
-    font-weight: bold; 
+.child-2{
+    display:none
 }
-.menu-li:hover .products-menu{
+.parent:hover .child{
     display: block;
     position: absolute;
     top: calc(100% + 3px);
-    left: 8%;
+    left: 6.5%;
 }
-
-.product-link{
+.parent:hover{
+    background-color: #009eff;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+.link{
     background-color: #009eff;
-    border: 1px solid #0084ef;
+    border: 1px solid #0084ef ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
     width: 250px;
-    display: block;
-    margin: 0;
-}
-
-.products-li:hover .sub-menu{
-    display: block;
-    position: absolute;
-}
-.sub-link{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #009eff;
-    border: 1px solid #0084ef;
+    padding-left: 10px;
 }
