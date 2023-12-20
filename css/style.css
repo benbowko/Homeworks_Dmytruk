@@ -23,19 +23,17 @@ ul{
 .mr-10{
     margin-right: 10px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
 /* ------------------------------------menu */
 .menu{
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0;
-    width: 405px;
     background-color: #333333;
     border-bottom: 3px solid #009eff;
-}
-.menu-li{
-    display: inline-block;
     position: relative;
-    transition:  0.3s linear;
 }
 .products-menu{
     display: none;
@@ -43,74 +41,44 @@ ul{
 .sub-menu{
     display: none;
 }
-.menu-li:hover .products-menu{
-    display: block;
-    position: absolute;
+.menu-li{
+    display: inline-block;
 }
-.products-li:nth-child(1){
-    margin-top: 49px;
-    background-color: #009eff;
+.menu-link:hover{
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 150px;
-    padding-left: 10px;
-    border: 1px solid #0084ef;
-}
-.products-li:nth-child(2){
     background-color: #009eff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 150px;
-    padding-left: 10px;
-    border: 1px solid #0084ef;
 }
-.sub-li:nth-child(1){
-    margin-bottom: 5px;
-}
-
-.products-li:hover .sub-menu{
-    display: block;
-    position: absolute;
-    right: -150px;
-    top: 104px;
-}
-
-.sub-li:nth-child(1){
-    background-color: #009eff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 150px;
-    padding-left: 10px;
-    border: 1px solid #0084ef;
-    margin: 0;
-}
-.sub-li:nth-child(2){
-    background-color: #009eff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 150px;
-    padding-left: 10px;
-    border: 1px solid #0084ef;
-}
-.menu-li:hover {
-    background-color: #009eff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 1px solid #0084ef;
-}
-.products-li:hover {
-    background-color: #00a9ff;
-}
-.menu-li:hover::after {
+.menu-link::after {
     content: '+';
     color: #fff; 
     margin-left: 3px;
     font-weight: bold; 
 }
-.products-li:hover::after{
-    content: '+';
-    color: #fff; 
-    margin-left: 40px; 
-    font-weight: bold; 
-    display: inline-block;
+.menu-li:hover .products-menu{
+    display: block;
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 8%;
+}
+
+.product-link{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #009eff;
+    border: 1px solid #0084ef;
+    width: 250px;
+    display: block;
+    margin: 0;
+}
+
+.products-li:hover .sub-menu{
+    display: block;
+    position: absolute;
+}
+.sub-link{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #009eff;
+    border: 1px solid #0084ef;
 }
