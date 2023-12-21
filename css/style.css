@@ -3,62 +3,31 @@
     margin: 0;
     padding: 0;
 }
-.container{
+.container {
     max-width: calc(1110px + 2rem);
     padding-right: 1rem;
     padding-left: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
-img{
+img {
     max-width: 100%;
 }
-a{
+a {
     text-decoration: none;
     color: white;
 }
-ul{
+ul {
     list-style: none;
 }
-.mr-10{
+.mr-10 {
     margin-right: 10px;
 }
-.mb-20{
+.mb-20 {
     margin-bottom: 20px;
 }
-.padding{
-    padding-top: 20px;
-    padding-bottom: 20px
-}
 /* ------------------------------------menu */
-.menu{
-    margin: 0;
-    background-color: #333333;
-    border-bottom: 3px solid #009eff;
-}
-.parent{
-    display: inline-block;
-    position: relative;
-}
-.child{
-    display: none;
-}
-.child-2{
-    display:none
-}
-.parent:hover .child{
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0%;
-}
-.child>.parent:hover .child{
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 100%;
-}
-.link{
+.link {
     background-color: #009eff;
     border: 1px solid #0084ef ;
     padding-top: 15px;
@@ -66,4 +35,37 @@ ul{
     display: block;
     width: 250px;
     padding-left: 10px;
+}
+.menu {
+    margin: 0;
+    background-color: #333333;
+    border-bottom: 3px solid #009eff;
+}
+.menu > .parent {
+    padding: 20px 0;
+}
+.parent {
+    display: inline-block;  
+    position: relative;
+}
+.child {
+    display: none;
+    position: absolute; 
+}
+.menu .child {
+    top: 100%;
+    left: 0%;
+}
+.parent:hover {
+    background-color: #009eff;
+}
+.parent:hover > .child{
+    display: block; 
+}
+.parent > .link:hover{
+    background-color: red;
+}
+.child .child{
+    top: 0%;
+    left: 100%;
 }
