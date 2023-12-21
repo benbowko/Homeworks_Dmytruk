@@ -10,9 +10,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-img {
-    max-width: 100%;
-}
+
 a {
     text-decoration: none;
     color: white;
@@ -22,14 +20,16 @@ ul {
 }
 .mr-10 {
     margin-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.mb-20 {
-    margin-bottom: 20px;
+.mr-10:hover{
+    background-color: #009eff;
 }
 /* ------------------------------------menu */
 .link {
     background-color: #009eff;
-    border: 1px solid #0084ef ;
+    border: 1px solid #0084ef;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
@@ -56,16 +56,32 @@ ul {
     top: 100%;
     left: 0%;
 }
-.parent:hover {
-    background-color: #009eff;
+.parent:hover > .child {
+    display: block;
 }
-.parent:hover > .child{
-    display: block; 
+
+.parent:hover > .link {
+    background-color: #00a9ff;
 }
-.parent > .link:hover{
-    background-color: red;
-}
-.child .child{
+
+.child .child {
     top: 0%;
     left: 100%;
+}
+.child .child .link:hover {
+    background-color: #00a9ff;
+}
+.menu > li::after {
+    content: " +";
+    display: inline-block;
+    color: white;
+    margin-left: 5px;
+}
+.link::after {
+    content: " +";
+    display: inline-block;
+    margin-left: 120px;
+}
+.child .child .link::after {
+    content: ""; 
 }
