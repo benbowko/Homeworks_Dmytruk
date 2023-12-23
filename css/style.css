@@ -4,9 +4,7 @@
     padding: 0;
 }
 .container{
-    max-width: calc(1110px + 2rem);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: 1290px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,8 +15,105 @@ a{
     text-decoration: none;
 }
 html{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Graphik LCG',  sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 25px;
+    line-height: 35px;
 }
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.mr-10{
+    margin-right: 10px;
+}
+/* -------------------------HEADER--------------------------------------------------- */
+.header{
+    border-bottom: 1px solid grey;
+}
+.header .logo{
+    margin-right: 51px;
+    margin-top: 14px;
+    padding-top: 34px;
+    padding-bottom: 33px;
+}
+.header .nav-li{
+    margin-right: 42px;
+}
+.header .nav-li:last-child{
+    margin-right: 305px;
+}
+.header .nav-list{
+    list-style: none;
+    margin: 0;
+}
+.header .nav-link{
+    font-family: 'Graphik LCG',  sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
+}
+ .header .nav-link::before, .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    transition: transform 0.5s;
+}
+.header .nav-link::after{
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.header .nav-link:hover::after{
+    transform: scaleX(1);
+}
+
+.log-link{
+    display: block;
+    width: 120px;
+    font-weight: 600;
+    font-family: 'Graphik LCG',  sans-serif;
+    font-size: 16px;
+    line-height: 45px;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .log-link span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .log-link:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FF6336;
+    transition: all .35s;
+  }
+  
+  .log-link:hover{
+    color: #fff;
+  }
+  
+  .log-link:hover:after{
+    width: 100%;
+  }
+  /* -----------------------------------seaction1------------------------------------------------------ */
