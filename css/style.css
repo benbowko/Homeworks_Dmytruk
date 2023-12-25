@@ -224,13 +224,6 @@ html{
     width: 491px;
     margin-bottom: 30px;
  }
- .projects-section .project-link{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    color: black;
-    text-decoration: none;
- }
  .projects-section .project-image{
     max-width: 632px;
  }
@@ -491,10 +484,12 @@ html{
 /* -----------------------------------------------footer-------------------------------------------------- */
 .footer .container{
     margin-top: 92px;
+    border-bottom: 1px solid black;
 }
 .footer .case-block{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-right: 70px;
 }
 .footer .case-title{
@@ -519,19 +514,16 @@ html{
     color: black;
     margin-bottom: 15px;
 }
-.footer .case-link{
-    font-family: 'Graphik LCG',  sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    color: black;
-}
 .footer .more-info{
     display: flex;
     flex-direction: column;
-    margin-right: 34px;
-    justify-content: flex-start;
     align-items: flex-start;
+    margin-right: 34px;
+    width: 187px;
+}
+.footer .more-info:last-child{
+   margin-right: 0;
+   margin-bottom: 421px;
 }
 .footer .more-info-title{
     font-weight: 600;
@@ -545,5 +537,73 @@ html{
     line-height: 15px;
     color: black;
     margin-bottom: 15px;
-    width: 187px;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
+}
+.footer .more-info-text::before, .more-info-text::after{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    transition: transform 0.5s;
+}
+.footer .more-info-text::after{
+    left: 0;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.footer .more-info-text:hover::after{
+    transform: scaleX(1);
+}
+.footer .wrapper-end{
+    max-width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 48px;
+    align-items: center;
+    margin-bottom: 43px;
+}
+.text-12{
+    font-family: 'Graphik LCG',  sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: black;
+}
+.footer .end-text{
+    width: 301px;
+}
+.footer .end-logo{
+    width: 90px;
+    margin-right: 14px;
+}
+.case-link{
+    font-family: 'Graphik LCG',  sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
+}
+
+.case-link::before, .case-link::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    transition: transform 0.5s;
+}
+.case-link::after{
+    left: 0;
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.case-link:hover::after{
+    transform: scaleX(1);
 }
