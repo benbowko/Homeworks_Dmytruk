@@ -41,6 +41,10 @@ html{
  .mb-57{
    margin-bottom: 57px;
  }
+ .padding{
+    padding-left: 21px;
+    padding-right: 22px;
+ }
 /* -------------------------HEADER--------------------------------------------------- */
 .header{
     border-bottom: 1px solid grey;
@@ -89,7 +93,19 @@ html{
     transform: scaleX(1);
 }
 .log-link{
-    width: 120px;
+    padding-right: 36px;
+    padding-left: 36px;
+    font-weight: 600;
+    font-family: 'Graphik LCG',  sans-serif;
+    font-size: 16px;
+    line-height: 45px;
+    display: block;
+    color: black;
+    border: 1px solid black;
+}
+.log-link-2{
+    padding-right: 21px;
+    padding-left: 22px;
     font-weight: 600;
     font-family: 'Graphik LCG',  sans-serif;
     font-size: 16px;
@@ -132,7 +148,7 @@ html{
     margin-bottom: 147px;
   }
  .localization-section .local-text-block{
-    width: 620px;
+    max-width: 552px;
  }
  .localization-section  .local-title{
     font-weight: 600;
@@ -140,7 +156,6 @@ html{
     line-height: 75px;
     color:black;
     margin-bottom: 51px;
-    width: 552px;
  }
  .localization-section .local-text{
     color: black;
@@ -148,7 +163,8 @@ html{
     max-width: 471px;
  }
  .localization-section .local-link{
-    width: 160px;
+    padding-right: 42px;
+    padding-left: 41px;
     font-weight: 600;
     font-family: 'Graphik LCG',  sans-serif;
     font-size: 16px;
@@ -156,6 +172,10 @@ html{
     display: block;
     color: black;
     border: 1px solid black;
+ }
+ .localization-section .local-link:nth-child(2){
+    padding-right: 29px;
+    padding-left: 29px;
  }
  .localization-section .local-link:hover{
     color: white;
@@ -183,14 +203,14 @@ html{
     align-items: center;
  }
  .brands-section  .brands-title{
-    text-align: center;
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
     color: black;
     padding-top: 98px;
     margin-bottom: 70px;
-    width: 720px;
+    max-width: 720px;
+    text-align: center;
  }
  .brands-section .brand-visual-block img{
     padding-right: 103px;
@@ -211,21 +231,19 @@ html{
     font-size: 50px;
     line-height: 60px;
     color: black;
-    width: 493px;
     margin-bottom: 30px;
- }
- .projects-section .project-text{
-    width: 491px;
  }
  .projects-section .project-text{
     font-size: 20px;
     line-height: 30px;
     color: black;
-    width: 491px;
     margin-bottom: 30px;
  }
  .projects-section .project-image{
     max-width: 632px;
+ }
+ .project-text-block{
+    max-width: 493px;
  }
 /* -------------------------------------------------------apps-section------------------------------------ */
 .apps-section{
@@ -243,7 +261,7 @@ html{
    color:black;
 }
 .apps-section .card-block{
-   width: 330px;
+   max-width: 330px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -268,6 +286,7 @@ html{
 /* -------------------------------------------productivity-section------------------------------------------------------------- */
 .productivity-section .productivity-block{
    align-items: flex-start;
+   gap: 30px;
  }
 .productivity-section .productivity-title{
    font-weight: 600;
@@ -278,11 +297,7 @@ html{
    color: black;
 }
 .productivity-section .wrapper-product{
-   width: 439px;
-   margin-right: 30px;
-}
-.productivity-section .wrapper-product:last-child{
-   margin-right: 0;
+   max-width: 439px;
 }
  .productivity-section .title-product{
    font-weight: 600;
@@ -295,11 +310,8 @@ html{
    font-size: 20px;
    line-height: 30px;
    color: black;
-   width: 409px;
+   max-width: 409px;
    margin-bottom: 25px;
- }
- .productivity-section .productivity-text:last-child{
-   width: 407px;
  }
  .mb{
    margin-bottom: 33px;
@@ -323,7 +335,7 @@ html{
     line-height: 40px;
     color: black;
     margin-bottom: 23px;
-    width: 920px;
+    max-width: 920px;
     margin-top: 53px;
     margin-right: 85px;
  }
@@ -368,7 +380,7 @@ html{
     line-height: 50px;
     color: black;
     padding-top: 47px;
-    width: 461px;
+    max-width: 461px;
     margin-right: 125px;
    }
    .software-section .rated-block{
@@ -407,12 +419,12 @@ html{
     line-height: 75px;
     color: black;
     margin: 0;
-    width: 791px;
+    max-width: 791px;
 }
 .tools-section .tools-text{
     color: black;
     margin-bottom: 25px;
-    width: 539px;
+    max-width: 539px;
 }
 .tools-section .tools-img{
     max-width: 1023px;
@@ -425,7 +437,6 @@ html{
     font-weight: 600;
     font-size: 16px;
     line-height: 60px;
-    width: 193px;
     color: white;
     padding-right: 20px;
     padding-left: 20px;
@@ -461,7 +472,7 @@ html{
     line-height: 75px;
     color: black;
     margin-bottom: 29px;
-    width: 784px;
+    max-width: 784px;
     text-align: center;
 }
 .try-it-section .try-text{
@@ -501,7 +512,7 @@ html{
     margin-bottom: 28px;
 }
 .footer .case-img{
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 31px;
 }
 .footer .special-img{
@@ -574,11 +585,12 @@ html{
     color: black;
 }
 .footer .end-text{
-    width: 301px;
+    max-width: 301px;
 }
 .footer .end-logo{
-    width: 90px;
+    max-width: 90px;
     margin-right: 14px;
+    align-self: flex-start;
 }
 .case-link{
     font-family: 'Graphik LCG',  sans-serif;
