@@ -143,12 +143,11 @@ html{
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
 }
-.vector-block{
-    width: 32px;
-    height: 32px;
+.main .vector-block{
+    display: block;
     float: right;
-    margin-top: -30px;
-}
-.employee-cards svg{
-    background-color: red;
+    margin-top: -10px;
+    background-color: #EDEDF7;
+    padding: 9.5px 11.5px 8.5px 13.5px;
+    border-radius: 50%;
 }
