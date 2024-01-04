@@ -140,6 +140,15 @@ html{
 }
 .main .employee-cards{
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+}
+.vector-block{
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-top: -30px;
+}
+.employee-cards svg{
+    background-color: red;
 }
