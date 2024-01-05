@@ -8,6 +8,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .container-small{
     max-width: 1360px;
     margin-left: auto;
@@ -164,6 +165,8 @@ html{
     color: #323264;
     margin-bottom: 15px;
     border-radius: 12px;
+    height: 400px;
+    max-width: 493px;
 }
 .main .employee-title{
     font-weight: 700;
@@ -237,4 +240,185 @@ html{
     line-height: 19.5px;
     color: #24A3FF;
     margin-left: 10px;
+}
+/* -----------------------------------------------media---------------------------------------------------------------- */
+@media (max-width: 1440px) {
+    .container{
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .container-small{
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .main .employee-img{
+        width: 400px;
+    }
+}
+@media(max-width: 1024px){
+    .container{
+    width: 904px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .container-small{
+        width: 664px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .main .employee-img{
+            width: 261.33px;
+        }
+}
+@media(max-width: 768px){
+    .container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+    .container-small{
+        width: 648px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+        }
+        .main .employee-img{
+            width: 294px;
+        }
+        .main .employee-cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .header .wrapper-header{
+       grid-template-areas: "contacts"
+                            "logo"
+                            "nav";
+        }
+        .header .contacts-list{
+            grid-area: contacts;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+        .header .nav-list{
+            grid-area: nav;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            list-style: none;
+            margin: 0;
+        }
+        .header .logo-header{
+            margin-bottom: 30px;
+        }
+        .footer .container{
+            display: grid;
+            grid-template-areas: "adress"
+                                 "footer"
+                                 "text";
+        }
+        .footer .footer-block{
+            grid-area: footer;
+        }
+        .footer .adress-block{
+            grid-area: adress;
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+        }
+        .footer .footer-block{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .footer .footer-text{
+            grid-area: text;
+            display: flex;
+            justify-content: center;
+        }
+        .footer .container{
+         max-width: max-content;
+         margin: auto;
+        }
+}
+@media (max-width: 375px){
+    .container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .container-small{
+        width: 315;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+        }
+        .main .employee-img{
+            width: 315px;
+            height: 300;
+        }
+        .main .employee-cards{
+            grid-template-columns: repeat(1, 1fr);
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .header .adress-link{
+            display: none;
+        }
+        .header svg{
+            display: none;
+        }
+        .header .navigation{
+            display: none;
+        }
+        .header .contacts-list{
+            background-color: #F5F5FA;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: max-content;
+        }
+        .header.laguage-link{
+            align-self: flex-start;
+        }
+        .header{
+            padding: 0;
+        }
+        .footer .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .footer-block{
+            grid-area: footer;
+        }
+        .footer .adress-block{
+            grid-area: adress;
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+        }
+        .footer .footer-block{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .footer .footer-text{
+            grid-area: text;
+            display: flex;
+            justify-content: center;
+        }
+        .footer svg{
+            display: none;
+        }
+        .footer .footer-facebook>svg{
+            display: block;
+        }
 }
