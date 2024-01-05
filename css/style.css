@@ -40,6 +40,9 @@ html{
 .mr-15{
     margin-right: 15px;
 }
+.color-text{
+    color:#B3B3BA;
+}
 /* -----------------------------------------header-------------------------------------------------------------------------------- */
 .header{
     padding-top: 50px;
@@ -146,8 +149,92 @@ html{
 .main .vector-block{
     display: block;
     float: right;
-    margin-top: -10px;
-    background-color: #EDEDF7;
-    padding: 9.5px 11.5px 8.5px 13.5px;
+    margin-top: -30px;
     border-radius: 50%;
+    background-color: #EDEDF7;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding-top: 8.5px;
+}
+.main .employee-img{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #323264;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+.main .employee-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #323264;
+    margin-bottom: 5px;
+}
+.employee-link:hover .employee-title,
+.employee-link:hover .vector-block svg path {
+    stroke: #F0145A; 
+    color: #F0145A;
+}
+/* ---------------------------------------------footer------------------------------------------------------------------ */
+.footer{
+    padding-top: 30px;
+    background-color: #F5F5FA;
+    padding-bottom: 30px;
+}
+.footer .container{
+    display: grid;
+    grid-template-areas: "adress text";
+}
+.footer .adress-block{
+    grid-area: adress;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+.footer .footer-block{
+    display: flex;
+    align-items: center;
+}
+.footer .footer-text{
+    grid-area: text;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer .footer-text{
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #B3B3BA;
+}
+.footer .adress-text{
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #323264;
+    margin-right: 10px;
+}
+.footer .map-link{
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.63px;
+    color: #24A3FF;
+}
+.footer .footer-facebook{
+    margin-right: 10px;
+}
+.footer .footer-numer{
+    color:#46466E;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.footer .footer-mail{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #24A3FF;
+    margin-left: 10px;
 }
