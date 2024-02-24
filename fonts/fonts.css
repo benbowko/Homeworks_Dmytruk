@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-Regular.woff2') format('woff2'),
+        url('Jeko-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-Bold.woff2') format('woff2'),
+        url('Jeko-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-Light.woff2') format('woff2'),
+        url('Jeko-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-Black.woff2') format('woff2'),
+        url('Jeko-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-Medium.woff2') format('woff2'),
+        url('Jeko-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-ExtraBold.woff2') format('woff2'),
+        url('Jeko-ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeko-SemiBold.woff2') format('woff2'),
+        url('Jeko-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

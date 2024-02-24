@@ -4,9 +4,7 @@
     padding: 0;
 }
 .container{
-    max-width: calc(1110px + 2rem);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: 1116px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,8 +15,180 @@ a{
     text-decoration: none;
 }
 html{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
+    font-family: 'JEKO', sans-serif;
+    font-weight: 600;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
+    color: #8D8D8D;
 }
+/* ----------------------------------------------HEADER------------------------------------- */
+.header{
+    border-bottom: 1px solid #8D8D8D;
+    margin-bottom: 100px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.header .logo-block{
+    margin-top: 10px;
+}
+.header .navigation{
+    display: flex;
+}
+.header .nav-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header .nav-li{
+    padding-right: 32px;
+}
+.nav-list .nav-li:last-child .nav-link {
+    padding-right: 0px;
+}
+.header .contacts-block{
+ position: relative;
+ margin: 0;
+ padding: 0;
+}
+.header .svg-wrapper{
+   position: absolute;
+   top: 10px;
+   left: -40px;
+}
+.header .nav-link{
+    color: #8D8D8D;
+    font-family: 'JEKO', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+.header .nav-link:hover{
+    color: #026AA2;
+    transition: 0.5s;
+}
+.header .nav-link::before, .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: #026AA2;
+    transition: transform 0.5s;
+}
+.header .nav-link::after{
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.header .nav-link:hover::after{
+    transform: scaleX(1);
+}
+.header .numer{
+    color: #343434;
+    font-family: 'JEKO', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.header .time-text{
+    color: #343434;
+    font-family: 'JEKO', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* ----------------------------------------MAIN-------------------------------------------------------- */
+.main .header-block{
+    max-width: 868px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.main .main-header{
+    font-size: 96px;
+    line-height: 89.28px;
+    border: 2px dashed #333333;
+    border-radius: 25px;
+    padding-bottom: 16px;
+    color: #333333;
+}
+.main .after-main-header{
+    font-size: 96px;
+    line-height: 89.28px;
+    color: #333333;
+}
+.after-main-header span{
+    color: #026AA2;
+}
+.main .description-block{
+    max-width: 593px;
+}
+.main .description{
+    font-size: 24px;
+    line-height: 29.64px;
+    border-left: 2px solid #026AA2;
+    padding-left: 30px;
+    color: #333333;
+    margin-bottom: 60px;
+}
+.main .description span{
+    color: #026AA2;
+}
+.main .call-link{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border: 1px solid #026AA2;
+    color: #026AA2;
+}
+.main .more-link{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 61px;
+    padding-right: 61px;
+    border: 1px solid #026AA2;
+    color: #026AA2;
+}
+.main .call-link:hover{
+    border: none;
+}
+.main .more-link:hover{
+    border: none;
+}
+.animation-link{
+    text-align: center;
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  .animation-link span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .animation-link:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BEE8FF;
+    transition: all 0.5s;
+  }
+  
+  .animation-link:hover{
+    color: #026AA2;
+  }
+  
+  .animation-link:hover:after{
+    width: 100%;
+  }
